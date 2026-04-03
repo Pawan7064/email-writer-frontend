@@ -113,7 +113,7 @@ function App() {
     setLoading(true);
     try{
       const response = await axios.post(
-        "http://localhost:8080/api/email/generate", // ⚠️ change after deploy
+        "https://email-writer-sb-pso0.onrender.com/api/email/generate", // ⚠️ change after deploy
         { emailContent, tone }
       );
 
